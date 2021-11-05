@@ -3,6 +3,7 @@ import { HomeIcon } from './icons/Home';
 import { CollectionIcon } from './icons/Collection';
 import { NavLink } from './NavLink';
 import { ChatIcon } from './icons/Chat';
+import { CurrentlyListening } from './CurrentlyListening';
 
 export const Sidebar: React.FC = () => (
   <aside className="fixed right-0 left-0 bottom-0 md:bottom-auto md:right-auto md:h-screen w-full md:w-64 bg-gray-800 py-2 md:py-0 z-50">
@@ -80,5 +81,7 @@ export const Sidebar: React.FC = () => (
         </li>
       </ul>
     </nav>
+
+    <CurrentlyListening />
   </aside>
 );
