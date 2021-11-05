@@ -22,7 +22,7 @@ export const Sidebar: React.FC = () => (
           <NavLink href="/">
             {(active) => (
               <a
-                className={`px-4 py-3 flex items-center rounded-lg hover:bg-gray-100 hover:bg-opacity-25 ${
+                className={`px-4 py-3 flex flex-col md:flex-row justify-center md:justify-start items-center rounded-lg hover:bg-gray-100 hover:bg-opacity-25 ${
                   active ? 'bg-indigo-500 bg-opacity-20' : ''
                 }`}
               >
@@ -31,7 +31,7 @@ export const Sidebar: React.FC = () => (
                     active ? 'text-indigo-500' : ''
                   }`}
                 />
-                <span className="leading-none ml-4">Home</span>
+                <span className="leading-none md:ml-4 mt-1 md:mt-0">Home</span>
               </a>
             )}
           </NavLink>
@@ -41,7 +41,7 @@ export const Sidebar: React.FC = () => (
           <NavLink href="/portfolio">
             {(active) => (
               <a
-                className={`px-4 py-3 flex items-center rounded-lg hover:bg-gray-100 hover:bg-opacity-25 ${
+                className={`px-4 py-3 flex flex-col md:flex-row justify-center md:justify-start items-center rounded-lg hover:bg-gray-100 hover:bg-opacity-25 ${
                   active ? 'bg-indigo-500 bg-opacity-20' : ''
                 }`}
               >
@@ -50,7 +50,9 @@ export const Sidebar: React.FC = () => (
                     active ? 'text-indigo-500' : ''
                   }`}
                 />
-                <span className="leading-none ml-4">Portfolio</span>
+                <span className="leading-none md:ml-4 mt-1 md:mt-0">
+                  Portfolio
+                </span>
               </a>
             )}
           </NavLink>
@@ -60,7 +62,7 @@ export const Sidebar: React.FC = () => (
           <NavLink href="/contact">
             {(active) => (
               <a
-                className={`px-4 py-3 flex items-center rounded-lg hover:bg-gray-100 hover:bg-opacity-25 ${
+                className={`px-4 py-3 flex flex-col md:flex-row justify-center md:justify-start items-center rounded-lg hover:bg-gray-100 hover:bg-opacity-25 ${
                   active ? 'bg-indigo-500 bg-opacity-20' : ''
                 }`}
               >
@@ -69,7 +71,9 @@ export const Sidebar: React.FC = () => (
                     active ? 'text-indigo-500' : ''
                   }`}
                 />
-                <span className="leading-none ml-4">Get in touch</span>
+                <span className="leading-none md:ml-4 mt-1 md:mt-0">
+                  Get in touch
+                </span>
               </a>
             )}
           </NavLink>
